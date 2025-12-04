@@ -26,7 +26,21 @@ Before running this project, make sure you have the following:
 
 ## 🛠️ Setup Instructions
 
-### 1️⃣ Clone the Repository
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/MadaraPremawardhana/WeatherSim.git
 cd OpenWeatherMap-Unreal-Weather
+
+**### 2. Build the Repository**
+```bash
+Right click on the project and click on build Visual studio project files
+Build the repository and launch
+
+**### 3. Add the API key**
+Add the API key to the APPID=XXXXXXXXXXXXXXX in the widget blueprint's GET request.
+Compile and hit play.
+
+HOW TO USE
+============
+Add a location by latitude and longitude or by location name.
+Hit "GET WEATHER" button
