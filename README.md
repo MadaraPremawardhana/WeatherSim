@@ -26,55 +26,42 @@ Before running this project, make sure you have the following:
 
 ## 🛠️ Setup Instructions
 
- 1. Clone the Repository
+ This project integrates Unreal Engine with the OpenWeatherMap API to display real-time weather data in-game through an interactive widget.
+
 ```bash
-git clone https://github.com/MadaraPremawardhana/WeatherSim.git
-cd OpenWeatherMap-Unreal-Weather
+1. Clone the Repository
+   git clone https://github.com/MadaraPremawardhana/WeatherSim.git
+   cd OpenWeatherMap-Unreal-Weather
 
 2. Generate Visual Studio Project Files
-
-Right-click the .uproject file in the project folder.
-
-Click Generate Visual Studio project files.
+   # Right-click the .uproject file in the project directory
+   # Select "Generate Visual Studio project files"
 
 3. Build the Project
-
-Open the generated .sln file in Visual Studio.
-
-Set the configuration to Development Editor and platform to Win64.
-
-Build the project from Build → Build Solution.
-
-After the build completes, open the project in Unreal Engine by double-clicking the .uproject file.
+   # Open the generated .sln file in Visual Studio
+   # Set Configuration: Development Editor
+   # Set Platform: Win64
+   # Build the project: Build → Build Solution
+   # After build, double-click the .uproject file to open in Unreal Engine
 
 4. Add Your OpenWeatherMap API Key
-
-Open the Widget Blueprint that sends the weather GET request.
-
-Find the URL section containing:
-
-APPID=XXXXXXXXXXXXXXX
-
-
-Replace it with your actual API key:
-
-APPID=your_api_key_here
-
-
-Compile the Blueprint and save.
+   # Open the Widget Blueprint responsible for sending the GET request
+   # Locate the URL containing: APPID=XXXXXXXXXXXXXXX
+   # Replace it with your actual API key: APPID=your_api_key_here
+   # Compile and save the Blueprint
 
 5. Run the Project
-
-Click Play in Unreal Engine to launch the weather interface.
+   # Click Play in Unreal Engine to launch the weather interface
 
 6. How to Use the Weather Widget
+   # Enter a location using either:
+   #   - Latitude & Longitude
+   #   - OR Location Name
+   # Click: GET WEATHER
+   # The widget will retrieve and display real-time weather data from the OpenWeatherMap API
 
-Enter a location using:
-
-Latitude and Longitude, OR
-
-Location Name
-
-Click GET WEATHER.
-
-The widget will display real-time weather data retrieved from the OpenWeatherMap API.
+7. Notes
+   # Requirements:
+   #   - Unreal Engine
+   #   - Visual Studio
+   #   - A valid OpenWeatherMap API key (https://openweathermap.org/api)
