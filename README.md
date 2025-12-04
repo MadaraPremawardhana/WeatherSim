@@ -29,16 +29,16 @@ Before running this project, make sure you have the following:
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/MadaraPremawardhana/WeatherSim.git
-cd OpenWeatherMap-Unreal-Weather
+cd OpenWeatherMap-Unreal-Weather```
 
-**### 2. Build the Repository**
+### 2. Build the Repository
 ```bash
 Right click on the project and click on build Visual studio project files
-Build the repository and launch
+Build the repository and launch```
 
-**### 3. Add the API key**
-Add the API key to the APPID=XXXXXXXXXXXXXXX in the widget blueprint's GET request.
-Compile and hit play.
+### 3. Add the API key
+```Add the API key to the APPID=XXXXXXXXXXXXXXX in the widget blueprint's GET request.
+Compile and hit play.```
 
 HOW TO USE
 ============
