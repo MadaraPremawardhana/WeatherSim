@@ -26,21 +26,55 @@ Before running this project, make sure you have the following:
 
 ## 🛠️ Setup Instructions
 
-### 1. Clone the Repository
+ 1. Clone the Repository
 ```bash
 git clone https://github.com/MadaraPremawardhana/WeatherSim.git
-cd OpenWeatherMap-Unreal-Weather```
+cd OpenWeatherMap-Unreal-Weather
 
-### 2. Build the Repository
-```bash
-Right click on the project and click on build Visual studio project files
-Build the repository and launch```
+2. Generate Visual Studio Project Files
 
-### 3. Add the API key
-```Add the API key to the APPID=XXXXXXXXXXXXXXX in the widget blueprint's GET request.
-Compile and hit play.```
+Right-click the .uproject file in the project folder.
 
-HOW TO USE
-============
-Add a location by latitude and longitude or by location name.
-Hit "GET WEATHER" button
+Click Generate Visual Studio project files.
+
+3. Build the Project
+
+Open the generated .sln file in Visual Studio.
+
+Set the configuration to Development Editor and platform to Win64.
+
+Build the project from Build → Build Solution.
+
+After the build completes, open the project in Unreal Engine by double-clicking the .uproject file.
+
+4. Add Your OpenWeatherMap API Key
+
+Open the Widget Blueprint that sends the weather GET request.
+
+Find the URL section containing:
+
+APPID=XXXXXXXXXXXXXXX
+
+
+Replace it with your actual API key:
+
+APPID=your_api_key_here
+
+
+Compile the Blueprint and save.
+
+5. Run the Project
+
+Click Play in Unreal Engine to launch the weather interface.
+
+6. How to Use the Weather Widget
+
+Enter a location using:
+
+Latitude and Longitude, OR
+
+Location Name
+
+Click GET WEATHER.
+
+The widget will display real-time weather data retrieved from the OpenWeatherMap API.
